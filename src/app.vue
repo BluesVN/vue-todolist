@@ -5,7 +5,7 @@
 export default {
   data(){
     return {
-      text:'hello world'
+      text:'hello world,创建新分支'
     }
   }  
 }
