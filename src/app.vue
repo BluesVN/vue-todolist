@@ -5,7 +5,7 @@
 export default {
   data(){
     return {
-      text:'hello'
+      text:'hello world'
     }
   }  
 }
