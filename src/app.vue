@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="cover">
-      <Header><!-- header 和原生的h5标签冲突 --></Header>
+      <!-- header 和原生的h5标签冲突 -->
+      <Header></Header>
       <Footer></Footer>
-      <Todo></Todo>
+      <todo></todo>
     </div>
   </div>
 </template>
