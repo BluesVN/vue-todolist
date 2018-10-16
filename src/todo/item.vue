@@ -8,6 +8,7 @@
         <label>{{todo.content}}</label>
         <button class="destory" @click="deletTodo"></button>
     </div>
+    
 </template>
 <script>
 export default {
@@ -50,8 +51,7 @@ export default {
         }
     }
     .toggle{
-        text-align: center;
-        width: 40px;
+        width: 0;
         height: 40px;
         line-height: 40px
         position: absolute;
@@ -59,9 +59,7 @@ export default {
         bottom: 0;
         margin: auto 0;
         border: none;
-        appearance: none;
         outline none
-        padding-left 5px
         cursor pointer
         &:after{
             content: url('../assets/images/round.svg')

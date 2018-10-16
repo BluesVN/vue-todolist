@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <div id="cover">
-      <!-- header 和原生的h5标签冲突 -->
-      <Header></Header>
-      <Footer></Footer>
-      <todo></todo>
-    </div>
+    <div id="cover"></div>
+    <!-- header 和原生的h5标签冲突 -->
+    <Header></Header>
+    <Footer></Footer>
+    <todo></todo>
   </div>
 </template>
 <script>
