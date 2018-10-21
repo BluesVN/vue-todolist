@@ -6,7 +6,7 @@
             v-model="todo.completed"
         >
         <label>{{todo.content}}</label>
-        <button class="destory" @click="deletTodo"></button>
+        <a class="destory" @click="deletTodo"></a>
     </div>
     
 </template>
@@ -19,7 +19,9 @@ export default {
     }
   },
   methods:{
-    deletTodo(){}
+    deletTodo(e){
+        this.$emit('del',this.todo.id)
+    }
   }
 }
 </script>
@@ -29,9 +31,19 @@ export default {
         background-color #fff
         font-size 24px
         border-bottom 1px solid rgba(0,0,0,0.06)
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
         &:hover{
-            .destroy:after{
+            .destory:after{
                 content: '×'
+                font-size: 30px;
+                width: 60px;
+                text-align: center;
+                font-weight: bolder;
+                cursor: pointer;
             }
         }
         label{
@@ -62,6 +74,8 @@ export default {
         outline none
         cursor pointer
         &:after{
+            top: 4px;
+            position: absolute;
             content: url('../assets/images/round.svg')
         }
         &:checked:after{

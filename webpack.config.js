@@ -89,7 +89,7 @@ if (isDev) {
       //webpack编译的过程中如果有任何错误都在网页中输出
       errors: true
     },
-    //open: true, //启动 dev-server时候 自动打开浏览器,看需求开启
+    open: true, //启动 dev-server时候 自动打开浏览器,看需求开启
     //historyApiFallback  功能
     hot: true // 热加载  修改后页面不刷新  ,需要依赖下面的插件HotModuleReplacementPlugin
   }
